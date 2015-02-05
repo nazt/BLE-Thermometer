@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="supported_service">
+        <item>0000dfb0-0000-1000-8000-00805f9b34fb</item>
+        <item>0000ffe0-0000-1000-8000-00805f9b34fb</item>
+    </string-array>
+
+    <string-array name="supported_characteristic">
+        <item>0000dfb1-0000-1000-8000-00805f9b34fb</item>
+        <item>0000ffe1-0000-1000-8000-00805f9b34fb</item>
+    </string-array>
+</resources>

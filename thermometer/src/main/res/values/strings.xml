@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BLE Thermometer</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="unknown">Unknown</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="title_activity_main">0xFFE1</string>
+    <string name="action_settings">Settings</string>
+    <string name="off">Off</string>
+    <string name="label_mac">Mac Address</string>
+    <string name="label_rssi">RSSI</string>
+    <string name="label_uuid">UUID</string>
+    <string name="label_major">MAJOR</string>
+    <string name="label_minor">MINOR</string>
+    <string name="label_tx_power">TX Power</string>
+    <string name="label_distance">Distance</string>
+
+    <!-- Formatters -->
+    <string name="formatter_meters">%sm</string>
+    <string name="formatter_db">%sdb</string>
+    <string name="formatter_item_count">Items: %s</string>
+
+    <!-- Export Email Strings -->
+    <string name="exporter_email_device_list_subject">Bluetooth LE Scan Results (%s)</string>
+    <string name="exporter_email_device_services_subject" formatted="false">Bluetooth LE Device GATT Results (%s, %s)</string>
+    <string name="exporter_email_device_list_body">Please find attached the scan results.</string>
+    <string name="exporter_email_device_list_picker_text">Please select your email client:</string>
+    <string name="title_activity_device_control">DeviceControl</string>
+    <string name="label_desc">Description</string>
+    <string name="label_as_string">Label</string>
+    <string name="label_as_array">As Array</string>
+    <string name="label_device_name">Device name</string>
+    <string name="menu_clear_device">Clear</string>
+    <string name="label_updated">Updated</string>
+    <string name="no_ble_data">ಠ_ಠ</string>
+    <string name="connecting">Connecting</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_calibrate">Calibrate</string>
+    <string name="menu_refresh_device">Refresh</string>
+    <string name="raw_value">Raw value</string>
+    <string name="calibrated_value">Calibrated value</string>
+
+</resources>

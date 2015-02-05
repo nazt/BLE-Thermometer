@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_connect"
+          android:title="@string/menu_connect"
+          android:orderInCategory="100"
+          android:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/menu_disconnect"
+          android:title="@string/menu_disconnect"
+          android:orderInCategory="101"
+          android:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/menu_calibrate"
+        android:title="@string/menu_calibrate"
+        android:orderInCategory="102"
+        android:showAsAction="ifRoom|withText"/>
+
+    <group android:checkableBehavior="single"
+        android:visible="false"
+        android:id="@+id/menu_group_calibrate_options">
+
+        <item android:id="@+id/menu_force_display_raw_value"
+            android:checked="true"
+            android:title="@string/raw_value" />
+
+        <item android:id="@+id/menu_display_calibrated_value"
+            android:title="@string/calibrated_value" />
+    </group>
+</menu>

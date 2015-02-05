@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Your content, here we're using a ScrollView -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/infoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/lowerSepparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/holo_blue_dark" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvItemCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formatter_item_count" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_above="@id/infoContainer"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="match_parent"
+                    android:dividerHeight="1dp"
+                    android:layout_height="match_parent"
+                    android:divider="@android:drawable/screen_background_light_transparent"
+                    />
+
+                <!-- can not set divider to @null because of @color/table_bacground -->
+                <TextView
+                    android:id="@android:id/empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/no_data" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+</LinearLayout>
