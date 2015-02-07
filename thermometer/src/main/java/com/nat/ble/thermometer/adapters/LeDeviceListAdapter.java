@@ -1,11 +1,11 @@
 package com.nat.ble.thermometer.adapters;
 
 import android.app.Activity;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 import com.nat.ble.thermometer.R;

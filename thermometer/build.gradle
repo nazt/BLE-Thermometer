@@ -31,11 +31,11 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file("debug.keystore")
+//            storeFile file("debug.keystore")
         }
 
         release {
-            storeFile file("android.nat.production.keystore")
+//            storeFile file("android.nat.production.keystore")
 
         }
     }
@@ -45,7 +45,7 @@ android {
             debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt')
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
         }
     }
 }

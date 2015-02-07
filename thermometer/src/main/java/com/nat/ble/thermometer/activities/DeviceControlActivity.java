@@ -127,8 +127,11 @@ public class DeviceControlActivity extends Activity implements OnFragmentInterac
                         Toast.makeText(DeviceControlActivity.this, "BLE Connected",
                                 Toast.LENGTH_SHORT).show();
                         if (mWriteCharacteristic != null) {
-                            mWriteCharacteristic.setValue("AT+BATT?");
+                            mWriteCharacteristic.setValue("FF00FF");
                             mBluetoothLeService.writeGatt(mWriteCharacteristic);
+                        }
+                        else {
+
                         }
                         invalidateOptionsMenu();
 
@@ -296,7 +299,7 @@ public class DeviceControlActivity extends Activity implements OnFragmentInterac
                             mBatteryLevelTextView.setText(data.substring(7) + "%");
                 }
                 else {
-                    mWriteCharacteristic.setValue("AT+BATT?");
+                    mWriteCharacteristic.setValue("ff00ff");
                     mBluetoothLeService.writeGatt(mWriteCharacteristic);
                     DeviceControlActivity.this.mValueInput.setText(data);
                 }
@@ -336,7 +339,7 @@ public class DeviceControlActivity extends Activity implements OnFragmentInterac
                                     characteristic, true);
                         }
 
-                        if ((charaProp | BluetoothGattCharacteristic.PROPERTY_WRITE) > 0) {
+                        if ((charaProp | BluetoothGattCharacteristic.PROPERTY_WRITE_NO_RESPONSE) > 0) {
                             mWriteCharacteristic = characteristic;
                         }
 
